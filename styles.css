@@ -1,4 +1,78 @@
 body {
-	background-image: url("https://fineitalianfood.com/wp-content/uploads/2018/05/AdobeStock_196505435.jpeg");
 	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	background-image: url("https://images.unsplash.com/photo-1543353071-10c8ba85a904?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+h1 {
+	font-size: 64px;
+	color: black;
+}
+
+h2 {
+	font-size: 50px;
+	color: black;
+}
+
+h3 {
+	font-size: 30px;
+	color: black;
+	width: 75%;
+	text-align: center;
+}
+
+.container {
+	position: relative;
+	width: 25%;
+}
+
+.image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	background-color: red;
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: 0.5s ease;
+}
+
+.container:hover .overlay {
+	bottom: 0;
+	height: 100%;
+}
+
+.text {
+	white-space: nowrap;
+	color: black;
+	font-size: 35px;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+.largeContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-between;
+	width: 75%;
 }
